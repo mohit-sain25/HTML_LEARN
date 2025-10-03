@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RECIPE BOOK</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth; /* smooth scrolling effect */
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #ff7043;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 20px 0 0 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .features .grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #fff3e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 250px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .cta {
+      background: #ffe0b2;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff7043;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e64a19;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>WELCOME TO RECIPE BOOK ❤️</h1>
+    <p>Discover delicious recipes and share your favorites!</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="recipes" class="features">
+    <h2> Recipes</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="poha-jalebi-.webp" alt="POHA-JALEBI">
+        <h3>POHA-JALEBI</h3>
+      </div>
+      <div class="card">
+        <img src="punjabi-kadhi.webp" alt="KADHI-PAKODA">
+        <h3>KADHI-PAKODA</h3>
+      </div>
+      <div class="card">
+        <img src="rasgulla.webp" alt="RASGULLA">
+        <h3>RASGULLA</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <h2>Categories</h2>
+    <p>Browse recipes by type: Breakfast, Lunch, Dinner, Snacks, Desserts, and more.</p>
+  </section>
+
+  <section id="contact" class="cta">
+    <h2>Want to share your favorite recipe?</h2>
+    <a href="#submit" class="btn">Submit Recipe</a>
+  </section>
+
+  <section id="submit">
+    <h2>Submit Your Recipe</h2>
+    <p>Email us at: <strong>recipes@foodies.com</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Recipe Book | Built with ❤️ by Foodies</p>
+  </footer>
+</body>
+</html>
